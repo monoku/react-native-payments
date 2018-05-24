@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADB95AAF1F199853007C2365 /* GatewayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB95AAE1F199853007C2365 /* GatewayManager.m */; };
-		B3E7B58A1CC2AC0600A0062D /* ReactNativePayments.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* ReactNativePayments.m */; };
+		66AFCEBF20B5FF0300C20950 /* ReactNativePayments.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AFCEBB20B5FF0300C20950 /* ReactNativePayments.m */; };
+		66AFCEC020B5FF0300C20950 /* GatewayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AFCEBC20B5FF0300C20950 /* GatewayManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +25,10 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libReactNativePayments.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativePayments.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADB95AAD1F199853007C2365 /* GatewayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GatewayManager.h; sourceTree = "<group>"; };
-		ADB95AAE1F199853007C2365 /* GatewayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GatewayManager.m; sourceTree = "<group>"; };
-		B3E7B5881CC2AC0600A0062D /* ReactNativePayments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativePayments.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* ReactNativePayments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativePayments.m; sourceTree = "<group>"; };
+		66AFCEBB20B5FF0300C20950 /* ReactNativePayments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReactNativePayments.m; path = ReactNativePayments/ReactNativePayments.m; sourceTree = SOURCE_ROOT; };
+		66AFCEBC20B5FF0300C20950 /* GatewayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GatewayManager.m; path = ReactNativePayments/GatewayManager.m; sourceTree = SOURCE_ROOT; };
+		66AFCEBD20B5FF0300C20950 /* ReactNativePayments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactNativePayments.h; path = ReactNativePayments/ReactNativePayments.h; sourceTree = SOURCE_ROOT; };
+		66AFCEBE20B5FF0300C20950 /* GatewayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GatewayManager.h; path = ReactNativePayments/GatewayManager.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +53,21 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				ADB95AAD1F199853007C2365 /* GatewayManager.h */,
-				ADB95AAE1F199853007C2365 /* GatewayManager.m */,
-				B3E7B5881CC2AC0600A0062D /* ReactNativePayments.h */,
-				B3E7B5891CC2AC0600A0062D /* ReactNativePayments.m */,
+				66AFCEBA20B5FED800C20950 /* ReactNativePayments */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		66AFCEBA20B5FED800C20950 /* ReactNativePayments */ = {
+			isa = PBXGroup;
+			children = (
+				66AFCEBE20B5FF0300C20950 /* GatewayManager.h */,
+				66AFCEBC20B5FF0300C20950 /* GatewayManager.m */,
+				66AFCEBD20B5FF0300C20950 /* ReactNativePayments.h */,
+				66AFCEBB20B5FF0300C20950 /* ReactNativePayments.m */,
+			);
+			name = ReactNativePayments;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,8 +126,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB95AAF1F199853007C2365 /* GatewayManager.m in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* ReactNativePayments.m in Sources */,
+				66AFCEC020B5FF0300C20950 /* GatewayManager.m in Sources */,
+				66AFCEBF20B5FF0300C20950 /* ReactNativePayments.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -38,6 +38,13 @@ const NativePayments: {
     });
   },
 
+  canMakePaymentsUsingNetworks() {
+    return new Promise((resolve, reject) => {
+      // On iOS, canMakePaymentsUsingNetworks is exposed as a constant.
+      resolve(ReactNativePayments.canMakePaymentsUsingNetworks);
+    });
+  },
+
   createPaymentRequest(methodData, details, options = {}) {
     return new Promise((resolve, reject) => {
       // Android Pay doesn't a PaymentRequest interface on the

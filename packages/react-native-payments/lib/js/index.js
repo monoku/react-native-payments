@@ -1,3 +1,4 @@
 import PaymentRequest from './PaymentRequest';
+import NativePayments from './NativePayments';
 
-module.exports = { PaymentRequest };
+module.exports = { PaymentRequest, NativePayments };
