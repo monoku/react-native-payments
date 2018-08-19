@@ -1,11 +1,10 @@
 {
-  "name": "@react-native-payments/stripe",
-  "version": "0.4.0",
+  "name": "@monoku/react-native-payments-stripe",
+  "version": "0.4.3",
   "description": "React Native Payments add-on for processing payments with Stripe.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "carthage update --platform ios"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/naoufal/react-native-payments/tree/master/packages/react-native-payments-addon-stripe",
   "keywords": [
@@ -18,6 +17,8 @@
   "author": "Naoufal Kadhom",
   "license": "MIT",
   "reactNativePaymentsAddonConfig": {
-    "frameworks": ["Stripe"]
+    "frameworks": [
+      "Stripe"
+    ]
   }
 }

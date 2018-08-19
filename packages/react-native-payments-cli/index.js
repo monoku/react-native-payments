@@ -22,7 +22,7 @@ const cli = meow(`
 `);
 
 function convertAddOnToPackageName(addon = '') {
-  const RNP_ADDON_PREFIX = 'react-native-payments-addon';
+  const RNP_ADDON_PREFIX = '@monoku/react-native-payments';
 
   return addon.startsWith(RNP_ADDON_PREFIX)
     ? addon
@@ -30,7 +30,7 @@ function convertAddOnToPackageName(addon = '') {
 }
 
 function getRNPProjectPath() {
-  return path.resolve(__dirname, '../react-native-payments/lib/ios/ReactNativePayments.xcodeproj/project.pbxproj');
+  return path.resolve(__dirname, '../@monoku/react-native-payments/lib/ios/ReactNativePayments.xcodeproj/project.pbxproj');
 }
 
 function getUserProjectPath(relativeIOSPath) {
@@ -144,7 +144,7 @@ function link(addon) {
   }
 
   // Check if `react-native-payments` is installed
-  if (!isPackageInstalled('react-native-payments')) {
+  if (!isPackageInstalled('@monoku/react-native-payments')) {
     return;
   };
 
