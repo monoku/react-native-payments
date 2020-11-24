@@ -21,13 +21,14 @@ RCT_EXPORT_MODULE()
 {
     return @{
              @"canMakePayments": @([PKPaymentAuthorizationViewController canMakePayments]),
+             @"canMakePaymentsUsingNetworks": @([PKPaymentAuthorizationViewController canMakePaymentsUsingNetworks:@[PKPaymentNetworkAmex, PKPaymentNetworkVisa, PKPaymentNetworkMasterCard]]),
              @"supportedGateways": [GatewayManager getSupportedGateways]
              };
 }
 
 RCT_EXPORT_METHOD(canMakePaymentsUsingNetworks:
                   (NSArray *)paymentNetworks
-                  callback:(RCTResponseSenderBlock)callback)
+                  callback:(RCTResponseSenderBlock)callback)f
 {
     callback(@[[NSNull null], @([PKPaymentAuthorizationViewController canMakePaymentsUsingNetworks:paymentNetworks])]);
 }
