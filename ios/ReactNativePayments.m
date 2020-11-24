@@ -28,7 +28,7 @@ RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(canMakePaymentsUsingNetworks:
                   (NSArray *)paymentNetworks
-                  callback:(RCTResponseSenderBlock)callback)f
+                  callback:(RCTResponseSenderBlock)callback)
 {
     callback(@[[NSNull null], @([PKPaymentAuthorizationViewController canMakePaymentsUsingNetworks:paymentNetworks])]);
 }
